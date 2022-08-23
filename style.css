@@ -1,0 +1,80 @@
+@font-face {
+  font-family: 'NovaMono';
+  src: url(fonts/Nova_Mono/NovaMono-Regular.ttf);
+}
+@font-face {
+  font-family: 'BaiJamjuree-Regular';
+  src: url(fonts/Bai_Jamjuree/BaiJamjuree-Regular.ttf);
+}
+@font-face {
+  font-family: 'BaiJamjuree-SemiBold';
+  src: url(fonts/Bai_Jamjuree/BaiJamjuree-SemiBold.ttf);
+}
+
+body {
+  font-family: 'BaiJamjuree-Regular';
+}
+.body-index { /* only on index */
+  background-image: url(photos/homepage/desktop.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+	background-size: cover;
+}
+.body-pages { /* only on pages */
+  background-color: #CECAC4;
+}
+
+h1 { /* title on index */
+  font-family: 'NovaMono';
+  color: #ffffff;
+  font-size: 3.5rem;
+  line-height: 50rem;
+  text-align: center;
+}
+h2 { /* titles on pages */
+  font-family: 'NovaMono';
+  color: #5E515E;
+  font-size: 2rem;
+  margin-top: 7rem;
+  text-align: center;
+}
+
+/* ########### header nav ########### */
+nav {
+  display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 24px;
+	height: 70px;
+}
+.nav-pages { /* only on pages */
+  background-color: #47555E;
+}
+.logo {
+  height: 65px;
+}
+.menu {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 40px;
+	margin-top: 10px;
+}
+.menu-item {
+	list-style: none;
+  cursor: pointer;  
+}
+.menu-link {
+	color: white;
+	text-decoration: none;
+  transition: 0.7s ease;
+}
+.menu-link:hover, .menu-link.active {
+  color: #CECAC4;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.index:hover, .index.active { /* only on index */
+  color: #47555E;
+}
+
