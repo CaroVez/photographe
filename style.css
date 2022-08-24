@@ -6,9 +6,11 @@
   font-family: 'BaiJamjuree-Regular';
   src: url(fonts/Bai_Jamjuree/BaiJamjuree-Regular.ttf);
 }
-@font-face {
-  font-family: 'BaiJamjuree-SemiBold';
-  src: url(fonts/Bai_Jamjuree/BaiJamjuree-SemiBold.ttf);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -35,12 +37,25 @@ h2 { /* titles on pages */
   font-family: 'NovaMono';
   color: #5E515E;
   font-size: 2rem;
-  margin-top: 7rem;
+  margin-bottom: 2rem;
   text-align: center;
 }
+h3 { /* titles on contact page */
+  font-family: 'NovaMono';
+  color: #5E515E;
+  font-size: 2rem;
+}
+
+main {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 7rem;
+}
+
 
 /* ########### header nav ########### */
-nav {
+header nav {
   display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -78,3 +93,169 @@ nav {
   color: #47555E;
 }
 
+
+/* ########### galerie page ########### */
+.gallery {
+  display: flex;  
+}
+
+
+/* ########### categories on galerie page ########### */
+.categories {
+  background-color: #ffffff;
+  width: 25%;
+  padding: 1rem;
+}
+.bi-search {
+ margin: 1rem;
+ color: #5E515E;
+}
+.input-search {
+  border: inherit;
+  border-bottom: #5E515E solid 1px;
+  background-color: inherit;
+}
+.category {
+	list-style: none;
+  cursor: pointer;
+  color: #5E515E;
+  margin-top: 1.5rem;
+}
+.category:hover {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+
+/* ########### photos on galerie page ########### */
+.photos {
+  background-color: #5E515E;
+  width: 75%;
+}
+.photo-gallery {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1.25rem;
+}
+.photo-gallery > li {
+  flex-basis: 20rem;
+  height: 20rem;
+  position: relative;
+  cursor: pointer;
+}
+.photo-gallery::after {
+  content: "";
+  flex-basis: 20rem;
+}
+.photo-gallery li img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(94, 81, 94, 0.5);
+  top: 0;
+  left: 0;
+  transform: scale(0);
+  transition: all 0.2s 0.1s ease-in-out;
+  color: #fff;
+  /* center overlay text */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.photo-gallery li:hover .overlay {
+  transform: scale(1);
+}
+
+
+/* ########### tarifs page ########### */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card {
+  margin: 0.75rem;
+  max-width: 30rem;
+}
+.card img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+.card-body {
+  text-align: right;
+}
+.card-title, .card-price {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+.card-price {
+  font-size: 1.75rem;
+}
+
+
+/* ########### contact page ########### */
+.contact {
+  display: flex;
+  color: #5E515E;
+  justify-content: center;
+}
+.info {
+  width: 33%;
+}
+.email a, .follow a {
+  text-decoration: none;
+  color: #5E515E;
+}
+.email a:hover, .follow a:hover {
+  font-weight: bold;
+  text-decoration: underline;
+}
+.follow .bi {
+  margin-right: 1rem;
+}
+.copyright {
+  font-weight: bold;
+}
+.gap {
+  height: 3rem;
+}
+
+form {
+	display: table;
+}
+.form label {
+	display: table-cell;
+}
+.form input, .form textarea, .form select {
+  width: 30rem;
+	margin-bottom: 10px;
+  background-color: #ffffff;
+  border: #000000 solid 1px;
+}
+option {
+  color: #5E515E;
+}
+textarea {
+	height: 200px;
+}
+.send {
+	background-color: #5E515E;
+	border: none;
+	border-radius: 3px;
+	padding: 5px;
+	color: #ffffff
+}
+.send:hover {
+	background-color: #ffffff;
+  color: #5E515E;
+  font-weight: bold;
+}
