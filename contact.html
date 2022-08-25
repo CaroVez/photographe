@@ -13,7 +13,7 @@
 <body class="body-pages">
   <header>
     <nav class="fixed-top nav-pages">
-      <a href="index.html"><img src="photos/logo/logoShort.png" class="logo"/></a>
+      <a href="index.html"><img src="logo/logoTransparant.png" class="logo"/></a>
 
       <ul class="menu">
         <li class="menu-item"><a class="menu-link" href="index.html">acceuil</a></li>
@@ -72,15 +72,15 @@
         <form name="contact" netlify>
           <div>
             <label for="name" alt="nom">nom complet</label>
-            <input type="text" name="name" required/>
+            <input type="text" name="name" id="name" required/>
           </div>
           <div>
             <label for="email">courriel</label>
-            <input type="email" name="email" required/>
+            <input type="email" name="email" id="email" required/>
           </div>
           <div>
             <label for="categories">catégories</label>
-            <select name="categories" required>
+            <select name="categories" id="categories" required>
               <option value="">--sélectionner--</option>
               <option value="wedding">mariage</option>
               <option value="pregnant">grossesse</option>
@@ -93,7 +93,7 @@
           </div>
           <div>
             <label for="message">message</label>
-            <textarea name="message" value="message" required></textarea>
+            <textarea name="message" value="message" id="message" required></textarea>
           </div>
           <div>
             <button type="submit" class="send">envoyez</button>

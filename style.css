@@ -17,7 +17,7 @@ body {
   font-family: 'BaiJamjuree-Regular';
 }
 .body-index { /* only on index */
-  background-image: url(photos/homepage/desktop.jpg);
+  background-image: url(photos/desktop001.jpg);
   background-repeat: no-repeat;
   background-position: center;
 	background-size: cover;
