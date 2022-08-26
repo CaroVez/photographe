@@ -2,7 +2,7 @@
 label: wedding
 hide_body: true
 fields:
-- name: wedding
+- name: category
   type: image_gallery
   config: {}
-  label: wedding
+  label: category
