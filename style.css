@@ -103,24 +103,19 @@ header nav {
 /* ########### categories on galerie page ########### */
 .categories {
   background-color: #ffffff;
-  width: 25%;
-  padding: 1rem;
-}
-.bi-search {
- margin: 1rem;
- color: #5E515E;
-}
-.input-search {
-  border: inherit;
-  border-bottom: #5E515E solid 1px;
-  background-color: inherit;
+  width: 15%;
+  padding: 1rem;  
 }
 .category {
-	list-style: none;
+	border: none;
+  background-color: inherit;
   cursor: pointer;
   color: #5E515E;
-  margin-top: 1.5rem;
+  margin-top: 2.5rem;
 }
+.all {
+  margin-top: 0rem;
+} 
 .category:hover {
   font-weight: bold;
   text-decoration: underline;
@@ -132,14 +127,20 @@ header nav {
   background-color: #5E515E;
   width: 75%;
 }
-.photo-gallery {
-  list-style: none;
+#photo-gallery { 
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 0.5rem;
-  margin-top: 1.25rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
+.thumbnail {
+  height: 15rem;
+}
+
+
+/*
 .photo-gallery > li {
   flex-basis: 20rem;
   height: 20rem;
@@ -148,7 +149,7 @@ header nav {
 }
 .photo-gallery::after {
   content: "";
-  flex-basis: 20rem;
+  flex-basis: 15rem;
 }
 .photo-gallery li img {
   object-fit: cover;
@@ -165,7 +166,7 @@ header nav {
   transform: scale(0);
   transition: all 0.2s 0.1s ease-in-out;
   color: #fff;
-  /* center overlay text */
+  /* center overlay text *
   display: flex;
   align-items: center;
   justify-content: center;
@@ -173,7 +174,7 @@ header nav {
 .photo-gallery li:hover .overlay {
   transform: scale(1);
 }
-
+*/
 
 /* ########### tarifs page ########### */
 .cards {

@@ -37,32 +37,18 @@
     <div class="gallery">
 
       <div class="categories">
-        <form>
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-          </svg><input type="search" class="input-search">
-        </form>
-        <ul>
-          <li class="category">mariage</li>
-          <li class="category">grossesse</li>
-          <li class="category">bébé</li>
-          <li class="category">famille</li>
-          <li class="category">baptême</li>
-          <li class="category">couple</li>
-          <li class="category">portrait</li>
-        </ul>
+        <button class="category all">toutes les photos</button><br>
+        <button class="category wedding">mariage</button><br>
+        <button class="category pregnancy">grossesse</button><br>
+        <button class="category baby">bébé</button><br>
+        <button class="category family">famille</button><br>
+        <button class="category baptism">baptême</button><br>
+        <button class="category couple">couple</button><br>
+        <button class="category portrait">portrait</button>
       </div>
 
       <div class="photos">
-        <ul class="photo-gallery">
-          <li><img src="photos/wedding001.jpg"><div class="overlay"><span>mariage</span></div></li>
-          <li><img src="photos/pregnancy001.jpg"><div class="overlay"><span>grossesse</span></div></li>
-          <li><img src="photos/baby001.jpg"><div class="overlay"><span>bébé</span></div></li>
-          <li><img src="photos/family001.jpg"><div class="overlay"><span>famille</span></div></li>
-          <li><img src="photos/couple001.jpg"><div class="overlay"><span>couple</span></div></li>
-          <li><img src="photos/portrait001.jpg"><div class="overlay"><span>portrait</span></div></li>
-        </ul>
-
+        <div id="photo-gallery"></div>
       </div>
 
     </div>
