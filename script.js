@@ -1,7 +1,7 @@
 // ########### TAB WITH PHOTOS ########### //
-const photos = ['wedding001.jpg', 'wedding002.jpg', 'pregnancy001.jpg', 'baby001.jpg', 'family001.jpg', 'baptism001.jpg', 'couple001.jpg', 'portrait001.jpg'];
+const photos = ['wedding001.jpg', 'wedding002.jpg', 'wedding003.jpg', 'wedding004.jpg', 'wedding005.jpg', 'pregnancy001.jpg', 'baby001.jpg',  'family001.jpg', 'baptism001.jpg', 'couple001.jpg', 'portrait001.jpg'];
 
-// ########### DISPLAY ALL THE PHOTOS ########### //
+// ########### DISPLAY ALL THE PHOTOS IN HTML ########### //
 photos.forEach(name => {
    const photoGallery = document.getElementById('photo-gallery');
    const img = document.createElement("img");
@@ -9,7 +9,6 @@ photos.forEach(name => {
    img.src = `photos/${name}`;
    photoGallery.appendChild(img)
 });
-
 
 // ########### BUTTONS ########### //
 const all = document.querySelector('.all');
@@ -21,159 +20,71 @@ const baptism = document.querySelector('.baptism');
 const couple = document.querySelector('.couple');
 const portrait = document.querySelector('.portrait');
 
-
-// ########### FUNCTIONS ON CLICK ########### //
-// ########### ALL ########### //
-all.addEventListener('click', () => {
-  // clear existing photos
+// ########### clear existing photos ########### //
+function clearExistingPhotos() {
   const existingPhotos = document.getElementById('photo-gallery');
   existingPhotos.innerHTML = "";
+}
 
-  photos.forEach(name => {
+// ########### sort the photos with a category ########### //
+function sortingPhotos(category) {
+  const filterPhotos = (arr, requete) => {
+    return arr.filter(el =>  el.toLowerCase().indexOf(requete.toLowerCase()) !== -1);
+  }
+  filterPhotos(photos, category).forEach(name => {
     const photoGallery = document.getElementById('photo-gallery');
     const img = document.createElement("img");
     img.className = `thumbnail`;
     img.src = `photos/${name}`;
-    photoGallery.appendChild(img)
- });
-});
+    photoGallery.appendChild(img);
+  });
+}
 
+// ########### EVENT ON CLICK ########### //
+// ########### ALL ########### //
+all.addEventListener('click', () => {
+  clearExistingPhotos();
+  sortingPhotos('');
+});
 
 // ########### WEDDING ########### //
 wedding.addEventListener('click', () => {
-  // clear existing photos
-  const existingPhotos = document.getElementById('photo-gallery');
-  existingPhotos.innerHTML = "";
-
-  const sortingPhotos = (arr, requete) => {
-    return arr.filter(el =>  el.toLowerCase().indexOf(requete.toLowerCase()) !== -1);
-  }
-
-  sortingPhotos(photos, 'wedding').forEach(name => {
-    const photoGallery = document.getElementById('photo-gallery');
-    const img = document.createElement("img");
-    img.className = `thumbnail`;
-    img.src = `photos/${name}`;
-    photoGallery.appendChild(img);
-  });
+  clearExistingPhotos();
+  sortingPhotos('wedding');
 });
-
 
 // ########### PREGNANCY ########### //
 pregnancy.addEventListener('click', () => {
-  // clear existing photos
-  const existingPhotos = document.getElementById('photo-gallery');
-  existingPhotos.innerHTML = "";
-
-  const sortingPhotos = (arr, requete) => {
-    return arr.filter(el =>  el.toLowerCase().indexOf(requete.toLowerCase()) !== -1);
-  }
-
-  sortingPhotos(photos, 'pregnancy').forEach(name => {
-    const photoGallery = document.getElementById('photo-gallery');
-    const img = document.createElement("img");
-    img.className = `thumbnail`;
-    img.src = `photos/${name}`;
-    photoGallery.appendChild(img);
-  });
+  clearExistingPhotos();
+  sortingPhotos('pregnancy');
 });
-
 
 // ########### BABY ########### //
 baby.addEventListener('click', () => {
-  // clear existing photos
-  const existingPhotos = document.getElementById('photo-gallery');
-  existingPhotos.innerHTML = "";
-
-  const sortingPhotos = (arr, requete) => {
-    return arr.filter(el =>  el.toLowerCase().indexOf(requete.toLowerCase()) !== -1);
-  }
-
-  sortingPhotos(photos, 'baby').forEach(name => {
-    const photoGallery = document.getElementById('photo-gallery');
-    const img = document.createElement("img");
-    img.className = `thumbnail`;
-    img.src = `photos/${name}`;
-    photoGallery.appendChild(img);
-  });
+  clearExistingPhotos();
+  sortingPhotos('baby');
 });
-
 
 // ########### FAMILY ########### //
 family.addEventListener('click', () => {
-  // clear existing photos
-  const existingPhotos = document.getElementById('photo-gallery');
-  existingPhotos.innerHTML = "";
-
-  const sortingPhotos = (arr, requete) => {
-    return arr.filter(el =>  el.toLowerCase().indexOf(requete.toLowerCase()) !== -1);
-  }
-
-  sortingPhotos(photos, 'family').forEach(name => {
-    const photoGallery = document.getElementById('photo-gallery');
-    const img = document.createElement("img");
-    img.className = `thumbnail`;
-    img.src = `photos/${name}`;
-    photoGallery.appendChild(img);
-  });
+  clearExistingPhotos();
+  sortingPhotos('family');
 });
-
 
 // ########### BAPTISM ########### //
 baptism.addEventListener('click', () => {
-  // clear existing photos
-  const existingPhotos = document.getElementById('photo-gallery');
-  existingPhotos.innerHTML = "";
-
-  const sortingPhotos = (arr, requete) => {
-    return arr.filter(el =>  el.toLowerCase().indexOf(requete.toLowerCase()) !== -1);
-  }
-
-  sortingPhotos(photos, 'baptism').forEach(name => {
-    const photoGallery = document.getElementById('photo-gallery');
-    const img = document.createElement("img");
-    img.className = `thumbnail`;
-    img.src = `photos/${name}`;
-    photoGallery.appendChild(img);
-  });
+  clearExistingPhotos();
+  sortingPhotos('baptism');
 });
-
 
 // ########### COUPLE ########### //
 couple.addEventListener('click', () => {
-  // clear existing photos
-  const existingPhotos = document.getElementById('photo-gallery');
-  existingPhotos.innerHTML = "";
-
-  const sortingPhotos = (arr, requete) => {
-    return arr.filter(el =>  el.toLowerCase().indexOf(requete.toLowerCase()) !== -1);
-  }
-
-  sortingPhotos(photos, 'couple').forEach(name => {
-    const photoGallery = document.getElementById('photo-gallery');
-    const img = document.createElement("img");
-    img.className = `thumbnail`;
-    img.src = `photos/${name}`;
-    photoGallery.appendChild(img);
-  });
+  clearExistingPhotos();
+  sortingPhotos('couple');
 });
-
 
 // ########### PORTRAIT ########### //
 portrait.addEventListener('click', () => {
-  // clear existing photos
-  const existingPhotos = document.getElementById('photo-gallery');
-  existingPhotos.innerHTML = "";
-
-  const sortingPhotos = (arr, requete) => {
-    return arr.filter(el =>  el.toLowerCase().indexOf(requete.toLowerCase()) !== -1);
-  }
-
-  sortingPhotos(photos, 'portrait').forEach(name => {
-    const photoGallery = document.getElementById('photo-gallery');
-    const img = document.createElement("img");
-    img.className = `thumbnail`;
-    img.src = `photos/${name}`;
-    photoGallery.appendChild(img);
-  });
+  clearExistingPhotos();
+  sortingPhotos('portrait');
 });
