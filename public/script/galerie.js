@@ -63,3 +63,4 @@ couple.addEventListener('click', () => {
 portrait.addEventListener('click', () => {
   sortingPhotos('portrait');
 });
+

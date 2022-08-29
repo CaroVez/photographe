@@ -89,8 +89,19 @@ header nav {
   font-weight: bold;
   text-decoration: underline;
 }
-.index:hover, .index.active { /* only on index */
-  color: #47555E;
+
+.hamburger {
+	display: none;
+	cursor: pointer;
+}
+.bar {
+	display: block;
+	width: 25px;
+	height: 3px;
+	margin: 5px auto;
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	background-color: white;
 }
 
 
@@ -112,6 +123,7 @@ header nav {
   cursor: pointer;
   color: #5E515E;
   margin-top: 2.5rem;
+  text-align: left;
 }
 .all {
   margin-top: 0rem;
@@ -148,7 +160,7 @@ header nav {
 }
 .card {
   margin: 0.75rem;
-  max-width: 30rem;
+  width: 25rem;
 }
 .card img {
   object-fit: cover;
@@ -223,4 +235,130 @@ textarea {
 	background-color: #ffffff;
   color: #5E515E;
   font-weight: bold;
+}
+
+
+/* ########### TABLET ########### */
+@media screen and (max-width: 1050px) {
+  h1 {
+		font-size: 2rem;
+    line-height: inherit;
+    margin-top: 25rem;
+	}
+
+}
+
+
+@media screen and (max-width: 780px) {
+  .body-index { /* only on index */
+    height: 100%;
+    background-image: url(../photos/mobile001.jpg);
+    background-size: cover;
+    background-position: top;
+  }
+
+  h1 {
+		font-size: 2rem;
+    line-height: inherit;
+    margin-top: 25rem;
+	}
+	h2 {
+		font-size: 1.5rem;
+    margin-bottom: 1rem;
+	} 
+  h3 {
+		font-size: 1.5rem;
+	}   
+  
+  main {
+    margin-top: 5rem;
+  }
+  .logo {
+    height: 45px;
+  }
+  /* #### menu hamburger #### */
+	.hamburger {
+		display: block;
+	}
+	.hamburger.active .bar:nth-child(2) {
+		opacity: 0;
+	}
+	.hamburger.active .bar:nth-child(1) {
+		transform: translateY(8px) rotate(45deg);
+	}
+	.hamburger.active .bar:nth-child(3) {
+		transform: translateY(-8px) rotate(-45deg);
+	}
+	.menu {
+		position: fixed;
+		right: -100%;
+		top: 70px;
+		gap: 0;
+		flex-direction: column;		
+		width: 25%;
+		transition: 0.3s;
+		margin-top: inherit;
+    align-items: flex-end;
+    background-color: #47555E;
+	}
+	.menu .menu-item {
+		margin-bottom: 10px;
+		margin-right: 20px;
+	}
+	.menu.active {
+		right: 0;
+	}
+
+
+  /* #### galerie page #### */
+  .gallery {
+    display: block;
+  }
+  .categories {
+    width: inherit;
+    padding: inherit;  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .category {
+    margin-top: inherit;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+  .photos {
+    width: inherit;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+  }
+  #photo-gallery img {
+    height: 12rem;
+  }
+
+
+  /* #### contact page #### */
+  .contact {
+    display: block;
+    text-align: center;
+  }
+  .info {
+    width: inherit;
+  }
+  .gap {
+    height: 0rem;
+  }
+  /* #### form #### */
+  form {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .form {
+    margin-top: 2rem;
+  }
+  .form input, .form textarea, .form select {
+    width: 20rem;
+  }
+  textarea {
+    height: 100px;
+  }
 }
