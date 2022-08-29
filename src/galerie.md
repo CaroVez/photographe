@@ -1,0 +1,4 @@
+---
+layout: galerie.njk
+
+---
