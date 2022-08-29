@@ -1,4 +1,13 @@
 ---
 label: photos
 hide_body: false
-fields: []
+fields:
+- name: layout
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: layout
