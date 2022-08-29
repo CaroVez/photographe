@@ -1,9 +1,0 @@
----
-category:
-- "/photos/wedding001.jpg"
-- "/photos/wedding002.jpg"
-- "/photos/wedding003.jpg"
-- "/photos/wedding005.jpg"
-- "/photos/wedding004.jpg"
-
----

@@ -1,0 +1,31 @@
+---
+layout: layout.njk
+dot: .
+title: galerie
+nav: nav-pages
+body: pages
+activeGalerie: active
+---
+
+    <h2>galerie de photos</h2>
+
+    <div class="gallery">
+
+      <div class="categories">
+        <button class="category all">toutes les photos</button><br>
+        <button class="category wedding">mariage</button><br>
+        <button class="category pregnancy">grossesse</button><br>
+        <button class="category baby">bébé</button><br>
+        <button class="category family">famille</button><br>
+        <button class="category baptism">baptême</button><br>
+        <button class="category couple">couple</button><br>
+        <button class="category portrait">portrait</button>
+      </div>
+
+      <div class="photos">
+        <div id="photo-gallery">
+          {{content | safe}}
+        </div>
+      </div>
+
+    </div>

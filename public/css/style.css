@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'NovaMono';
-  src: url(fonts/Nova_Mono/NovaMono-Regular.ttf);
+  src: url(../fonts/Nova_Mono/NovaMono-Regular.ttf);
 }
 @font-face {
   font-family: 'BaiJamjuree-Regular';
-  src: url(fonts/Bai_Jamjuree/BaiJamjuree-Regular.ttf);
+  src: url(../fonts/Bai_Jamjuree/BaiJamjuree-Regular.ttf);
 }
 
 * {
@@ -17,7 +17,7 @@ body {
   font-family: 'BaiJamjuree-Regular';
 }
 .body-index { /* only on index */
-  background-image: url(photos/desktop001.jpg);
+  background-image: url(../photos/desktop001.jpg);
   background-repeat: no-repeat;
   background-position: center;
 	background-size: cover;
@@ -127,7 +127,7 @@ header nav {
   background-color: #5E515E;
   width: 85%;
 }
-#photo-gallery { 
+#photo-gallery p { 
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -135,7 +135,7 @@ header nav {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
-.thumbnail {
+#photo-gallery img {
   height: 15rem;
 }
 
