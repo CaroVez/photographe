@@ -1,4 +1,4 @@
-// ########### BUTTONS ########### //
+// ########### CATEGORIES BUTTONS ########### //
 const all = document.querySelector('.all');
 const wedding = document.querySelector('.wedding');
 const pregnancy = document.querySelector('.pregnancy');
@@ -20,9 +20,19 @@ function sortingPhotos(category) {
   }  
 };
 
+// ########### CHANGING STYLE ON CATEGORIES NAMES ########### //
+function changingStyle(category) {
+  const buttons = document.querySelectorAll("button");
+  for (let i = 0; i < buttons.length; i++) {    
+    buttons[i].style.fontSize = "1rem";
+  }  
+  category.style.fontSize = "1.5rem"; 
+}
+
 // ########### EVENT ON CLICK ########### //
 // ########### ALL ########### //
 all.addEventListener('click', () => {
+  changingStyle(all);
   const photos = document.querySelectorAll("img");
   for (let i = 1; i < photos.length; i++) {    
     photos[i].hidden = false;
@@ -31,36 +41,43 @@ all.addEventListener('click', () => {
 
 // ########### WEDDING ########### //
 wedding.addEventListener('click', () => {
+  changingStyle(wedding);
   sortingPhotos('wedding');
 });
 
 // ########### PREGNANCY ########### //
 pregnancy.addEventListener('click', () => {
+  changingStyle(pregnancy);
   sortingPhotos('pregnancy');
 });
 
 // ########### BABY ########### //
 baby.addEventListener('click', () => {
+  changingStyle(baby);
   sortingPhotos('baby');
 });
 
 // ########### FAMILY ########### //
 family.addEventListener('click', () => {
+  changingStyle(family);
   sortingPhotos('family');
 });
 
 // ########### BAPTISM ########### //
 baptism.addEventListener('click', () => {
+  changingStyle(baptism);
   sortingPhotos('baptism');
 });
 
 // ########### COUPLE ########### //
 couple.addEventListener('click', () => {
+  changingStyle(couple);
   sortingPhotos('couple');
 });
 
 // ########### PORTRAIT ########### //
 portrait.addEventListener('click', () => {
+  changingStyle(portrait);
   sortingPhotos('portrait');
 });
 

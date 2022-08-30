@@ -15,7 +15,7 @@
     <nav class="fixed-top nav-pages">
       <a href="../index.html"><img src="../logo/logoTransparant.png" class="logo"/></a>
 
-      <ul class="menu">
+      <ul class="menu ">
         <li class="menu-item"><a class="menu-link " href="../index.html">acceuil</a></li>
         <li class="menu-item"><a class="menu-link " href="../galerie/index.html">galerie</a></li>
         <li class="menu-item"><a class="menu-link " href="../tarifs/index.html">tarifs</a></li>
@@ -41,6 +41,45 @@
     
     <div class="contact">
     
+      <div class="form">      
+        <h3>formulaire de contact</h3>
+
+        <form name="contact" netlify>
+          <div>
+            <label for="name" alt="nom">nom complet</label>
+            <input type="text" name="name" id="name" required/>
+          </div>
+          <div>
+            <label for="email">courriel</label>
+            <input type="email" name="email" id="email" required/>
+          </div>
+          <div>
+            <label for="categories">catégories</label>
+            <select name="categories" id="categories" required>
+              <option>--sélectionner--</option>
+              <option>mariage</option>
+              <option>grossesse</option>
+              <option>bébé</option>
+              <option>famille</option>
+              <option>baptême</option>
+              <option>couple</option>
+              <option>portrait</option>
+              <option>autre</option>
+            </select>
+          </div>
+          <div>
+            <label for="message">message</label>
+            <textarea name="message" value="message" id="message" required></textarea>
+          </div>
+          <div>
+            <button type="submit" class="send">envoyer</button>
+          </div>  
+        </form>
+
+        <div class="gap"></div>
+      
+      </div>
+
       <div class="info">
       
         <div class="contact-info">
@@ -72,43 +111,7 @@
       
       </div>
     
-      <div class="form">      
-        <h3>formulaire de contact</h3>
-
-        <form name="contact" netlify>
-          <div>
-            <label for="name" alt="nom">nom complet</label>
-            <input type="text" name="name" id="name" required/>
-          </div>
-          <div>
-            <label for="email">courriel</label>
-            <input type="email" name="email" id="email" required/>
-          </div>
-          <div>
-            <label for="categories">catégories</label>
-            <select name="categories" id="categories" required>
-              <option value="">--sélectionner--</option>
-              <option value="wedding">mariage</option>
-              <option value="pregnant">grossesse</option>
-              <option value="baby">bébé</option>
-              <option value="family">famille</option>
-              <option value="baptism">baptême</option>
-              <option value="couple">couple</option>
-              <option value="portrait">portrait</option>
-            </select>
-          </div>
-          <div>
-            <label for="message">message</label>
-            <textarea name="message" value="message" id="message" required></textarea>
-          </div>
-          <div>
-            <button type="submit" class="send">envoyer</button>
-          </div>  
-        </form>
-      
-      </div>
-    
-      </div>
+    </div>
 
   </main>  
 
