@@ -2,7 +2,7 @@
 label: photos
 hide_body: false
 fields:
-- name: layout
+- name: title
   type: textarea
   default: ''
   config:
@@ -10,6 +10,8 @@ fields:
     wysiwyg: false
     schema:
       format: markdown
-  label: layout
+  label: title
+  description: galerie
+  hidden: false
 pages:
 - src/galerie.md
