@@ -8,7 +8,7 @@ sections:
   path: src
   label: addPhotos
   create: documents
-  match: "**/*"
+  match: galerie.md
   new_doc_ext: md
   templates:
   - photos
