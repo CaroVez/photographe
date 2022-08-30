@@ -12,7 +12,6 @@ fields:
       format: markdown
   label: title
   description: galerie
-  hidden: true
+  hidden: false
 pages:
 - src/galerie.md
-- src/galerie2.md
