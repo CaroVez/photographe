@@ -10,6 +10,7 @@ sections:
   create: documents
   match: "**/*"
   templates:
+  - photostest
   - photos
 upload_dir: src/photos
 public_path: "../photos"

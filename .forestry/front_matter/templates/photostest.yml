@@ -1,0 +1,24 @@
+---
+label: photosTest
+hide_body: false
+fields:
+- name: title
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: title
+- name: date
+  type: text
+  config:
+    required: false
+  label: date
+- name: photos
+  type: image_gallery
+  config: {}
+  label: photos
+pages:
+- src/galerie-1.md
