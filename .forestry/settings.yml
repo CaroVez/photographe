@@ -9,6 +9,7 @@ sections:
   label: addPhotos
   create: documents
   match: "**/*"
+  new_doc_ext: ".md"
   templates:
   - photostest
   - photos
