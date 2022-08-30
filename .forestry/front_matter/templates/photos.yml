@@ -13,5 +13,3 @@ fields:
   label: title
   description: galerie
   hidden: false
-pages:
-- src/galerie.md
