@@ -13,5 +13,9 @@ fields:
   label: title
   description: galerie
   hidden: false
+- name: photos
+  type: image_gallery
+  config: {}
+  label: photos
 pages:
 - src/galerie.md
