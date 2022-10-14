@@ -5,9 +5,8 @@ admin_path: ''
 webhook_url: 
 sections:
 - type: document
-  path: test
+  path: src
   label: test
-  match: "**/*"
 - type: directory
   path: src
   label: addPhotos
